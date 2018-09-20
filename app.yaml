@@ -1,0 +1,3 @@
+service: hello-world
+runtime: nodejs
+env: flex
