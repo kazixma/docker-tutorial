@@ -6,19 +6,19 @@ pipeline {
         CI = 'true' 
     }
     stages {
+        stage('Install Package') {
+            steps {
+                sh 'npm install'
+            }
+        }
         stage('Build') {
             steps {
-                sh 'node -v'
+                sh 'npm start'
             }
         }
         stage('Test') {
             steps {
-                sh 'ls'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                sh 'ls'
+                sh 'npm run test'
             }
         }
     }
