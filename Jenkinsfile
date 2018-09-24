@@ -9,5 +9,15 @@ pipeline {
                 sh 'ls'
             }
         }
+        stage('Test') {
+            steps {
+                sh 'ls'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh 'ls'
+            }
+        }
     }
 }
