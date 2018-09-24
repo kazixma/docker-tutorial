@@ -8,17 +8,17 @@ pipeline {
     stages {
         stage('Install Package') {
             steps {
-                sh 'npm install'
+                sh 'sudo npm install'
             }
         }
         stage('Build') {
             steps {
-                sh 'npm start'
+                sh 'sudo npm start'
             }
         }
         stage('Test') {
             steps {
-                sh 'npm run test'
+                sh 'sudo npm run test'
             }
         }
     }
