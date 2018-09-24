@@ -13,12 +13,12 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'npm start'
+                sh 'ls'
             }
         }
         stage('Test') {
             steps {
-                sh 'npm run test'
+                sh 'ls'
             }
         }
     }
