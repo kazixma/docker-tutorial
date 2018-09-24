@@ -12,11 +12,13 @@ pipeline {
         stage('Install Package') {
             steps {
                 sh 'npm install'
+                sh 'npm install pm2 -g'
             }
         }
         stage('Build') {
             steps {
-                sh 'npm run test'
+                sh 'npm start'
+                sh 'pm2 list'
             }
         }
         stage('Test') {
